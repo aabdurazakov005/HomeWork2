@@ -35,9 +35,16 @@ public class Main {
         var firstBoxerWeight = 78.2;
         var secondBoxerWeight = 82.7;
         var totalWeight = firstBoxerWeight + secondBoxerWeight;
-        System.out.println(totalWeight);
-        var weightDifference = firstBoxerWeight - secondBoxerWeight;
-        System.out.println(weightDifference);
-
+        System.out.println("Общий вес " + totalWeight);
+        var weightDifference = secondBoxerWeight - firstBoxerWeight;
+        System.out.println("Разница " + weightDifference);
+        var remains = secondBoxerWeight % firstBoxerWeight;
+        System.out.println("Остаток " + remains);
+        var totalHours = 640;
+        var eachWorkerWorkTime = 8;
+        var totalWorkers = totalHours / eachWorkerWorkTime;
+        System.out.println("Всего работников в компании - " + totalWorkers + " человек");
+        totalWorkers = totalWorkers + 94;
+        System.out.println("Если в компании работает " + totalWorkers + " человек, то всего " + totalWorkers * 8 + " часов работы может быть поделено между сотрудниками");
     }
 }
